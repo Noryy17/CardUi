@@ -1,0 +1,35 @@
+/* --- RESET --- */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+
+/* --- LAYAR UTAMA --- */
+body { display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+
+/* --- CARD UTAMA --- */
+.card {
+    background-color: #ffffff;
+    width: 580px; /* Diperlebar untuk layout menyamping */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    
+    /* Ini sihirnya biar ke samping */
+    display: flex; 
+    align-items: center; 
+    gap: 35px; /* Jarak antara foto dan teks */
+}
+
+/* --- BAGIAN FOTO --- */
+.card-kiri { flex-shrink: 0; }
+
+.profile-img {
+    width: 140px; 
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #eef2f5; /* Efek bingkai tipis di foto */
+}
+
+/* --- BAGIAN TEKS --- */
+.card-kanan {
+    text-align: left; /* Rata kiri! Kunci utama biar gak kayak nisan */
+}
